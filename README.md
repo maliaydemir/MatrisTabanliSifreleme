@@ -1,19 +1,25 @@
 # MatrisTabanliSifreleme
 
 1) 27X27 lik matris oluşturulur.
-	2) Sütun ve satır indisleri ' ' ve (A-Z) olarak kabul edilir.
+
+2) Sütun ve satır indisleri ' ' ve (A-Z) olarak kabul edilir.
 	i=1 --> ' ', i=2 -->'A'
 	j=1 --> ' ', j=2 -->'A'
 	(indislerin 1 den başlamasının sebebi tüm matriste işimize yarayacak bir formül ile şifreleme yapmamızdır)
 	formül=(X1-1)*27+X2
 
-	3) Satır ve sütunların kesişimlerine bulundukları değerlerden 2 karakterli stringler elde edirlir.
+3) Satır ve sütunların kesişimlerine bulundukları değerlerden 2 karakterli stringler elde edirlir.
 	i=0,j=1 --> " A" ; i=1,j=1 --> "AA"
-	4) Hücrelerin değeri (X1-1)*27+X2 formülü ile hesaplanır.
+
+4) Hücrelerin değeri (X1-1)*27+X2 formülü ile hesaplanır.
 	"AB" nin hücre değeri (1-1)*27+2 = 29
-	5) Girilen açık metin 2 karakterli gruplar halinde ele alınır ve formülden hücre değeri bulunur.
-	6)	Bulunan hücre değeri şifreli metine eklenir ve açık metnin sonuna kadar bu işlem tekrar tekrar yapılır.
-	7) İşlem sonunda şifreli metin elde edilmiş olur.
+
+5) Girilen açık metin 2 karakterli gruplar halinde ele alınır ve formülden hücre değeri bulunur.
+
+6) Bulunan hücre değeri şifreli metine eklenir ve açık metnin sonuna kadar bu işlem tekrar tekrar yapılır.
+
+7) İşlem sonunda şifreli metin elde edilmiş olur.
+
 	örn: "ABAC" kelimesini şifreleyelim
 	Öncelikle "AB" ele alınır
 	A'nın indisi 2
